@@ -1,7 +1,7 @@
 {
   "name": "azkvenv",
   "description": "Preload environment variables from Azure Key Vaults",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "bin": {
     "kv": "./src/bin.js"
