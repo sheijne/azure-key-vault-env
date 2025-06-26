@@ -14,6 +14,8 @@
   },
   "scripts": {
     "build": "bun build --compile --outfile=./bin/kv ./src/bin.js",
+    "prerelease": "bun run build",
+    "release": "changeset publish",
     "prelink": "bun run build",
     "link": "bun link"
   },
