@@ -17,13 +17,13 @@ const main = defineCommand({
     ...sharedArgs,
   },
   subCommands: {
+    exec: () => import("./commands/exec.js").then((module) => module.command),
+    load: () => import("./commands/load.js").then((module) => module.command),
+    show: () => import("./commands/show.js").then((module) => module.command),
     setup: () => import("./commands/setup.js").then((module) => module.command),
     login: () => import("./commands/login.js").then((module) => module.command),
     logout: () =>
       import("./commands/logout.js").then((module) => module.command),
-    exec: () => import("./commands/exec.js").then((module) => module.command),
-    load: () => import("./commands/load.js").then((module) => module.command),
-    show: () => import("./commands/show.js").then((module) => module.command),
   },
 });
 
