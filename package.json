@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "bin": {
-    "kv": "./src/bin.js"
+    "kv": "./bin/kv"
   },
   "files": [
     "./bin/kv"
