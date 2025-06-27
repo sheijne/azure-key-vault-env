@@ -1,8 +1,7 @@
 import { intro, outro, spinner } from "@clack/prompts";
 import { defineCommand } from "citty";
-
 import { Env } from "../core/env/env.js";
-import { sharedArgs } from "../shared-args.js";
+import { sharedArgs, vault } from "../shared-args.js";
 
 export const command = defineCommand({
   meta: {
@@ -12,10 +11,7 @@ export const command = defineCommand({
   },
   args: {
     ...sharedArgs,
-    vault: {
-      type: "string",
-      required: true,
-    },
+    vault: vault(),
   },
   async run({ args }) {
     if (args.verbose) {

@@ -17,18 +17,23 @@ npm install --global azkvenv
 ```bash
 kv --help
 
-# USAGE kv [OPTIONS] exec|load|show
+# Preload environment variables from Azure Key Vaults (kv v0.0.1)                                                                                                                                                                                 2:58:16 PM
+#
+# USAGE kv [OPTIONS] exec|load|show|setup|login|logout
 #
 # OPTIONS
 #
-#       --cwd="."
-#   -v, --verbose
+#   --cwd="."
+#   --verbose
 #
 # COMMANDS
 #
-#   exec    Execute a script with preloaded environment variables from Azure Key Vault
-#   load    Load environment variables from Azure Key Vault, and write them to the local .env file
-#   show    Load environment variabels from Azure Key Vault, and print them to the terminal
+#     exec    Execute a script with preloaded environment variables from Azure Key Vault
+#     load    Load environment variables from Azure Key Vault, and write them to the local .env file
+#     show    Load environment variables from Azure Key Vault, and print them to the terminal
+#    setup    Setup Azure CLI
+#    login    Log in to Azure
+#   logout    Log out of Azure
 #
 # Use kv <command> --help for more information about a command.
 ```
@@ -49,3 +54,11 @@ kv exec --vault <vault_name> -- npm run dev
   }
 }
 ```
+
+### Pre-configure the vault name using an environment variable
+
+```bash
+AZKVENV_VAULT_NAME=mykeyvault kv exec -- npm run dev
+```
+
+Note: you can also add it to a local `.env` file.
