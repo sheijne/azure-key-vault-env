@@ -1,5 +1,13 @@
 # azkvenv
 
+## 0.0.2
+
+### Patch Changes
+
+- 555b47d: Now using prebuilt binary instead of source, prevents users from needing to install bun
+- 657f657: Added handling of `AZKVENV` environment variable to pre-configure the vault name used by `kv`
+- 8b533f6: `kv --help` now shows the correct description for the `kv setup` command
+
 ## 0.0.1
 
 ### Patch Changes
