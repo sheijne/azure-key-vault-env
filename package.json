@@ -3,6 +3,19 @@
   "description": "Preload environment variables from Azure Key Vaults",
   "version": "0.0.1",
   "type": "module",
+  "license": {
+    "type": "WTFPL",
+    "url": "https://www.wtfpl.net/about/"
+  },
+  "author": {
+    "name": "Sibbe Heijne",
+    "email": "sibbe@ovenwand.com",
+    "url": "https://sibbe.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheijne/azure-key-vault-env.git"
+  },
   "bin": {
     "kv": "./bin/kv"
   },
