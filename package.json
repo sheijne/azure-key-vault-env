@@ -27,7 +27,7 @@
   },
   "scripts": {
     "build": "bun build --compile --outfile=./bin/kv ./src/bin.js",
-    "prerelease": "bun run build",
+    "prerelease": "bun run build && bunx publint",
     "release": "changeset publish",
     "prelink": "bun run build",
     "link": "bun link"
