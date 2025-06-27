@@ -6,7 +6,7 @@ import { intro, log, outro } from "@clack/prompts";
 export const command = defineCommand({
   meta: {
     name: "setup",
-    description: "Log in to Azure",
+    description: "Setup Azure CLI",
   },
   args: {
     ...sharedArgs,
