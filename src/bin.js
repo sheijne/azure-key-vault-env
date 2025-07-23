@@ -1,11 +1,7 @@
 #!/usr/bin/env bun
-
 import { defineCommand, runMain } from "citty";
-import { readPackageJSON } from "pkg-types";
-
+import pkg from "../package.json";
 import { sharedArgs } from "./shared-args.js";
-
-const pkg = await readPackageJSON(import.meta.dirname);
 
 const main = defineCommand({
   meta: {
