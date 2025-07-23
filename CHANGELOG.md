@@ -1,5 +1,14 @@
 # azkvenv
 
+## 0.0.3
+
+### Patch Changes
+
+- a26e028: Updated dotenv from 16.6.0 to 17.2.0
+- 51b4ba3: - Removed dependency to `pkg-types`
+  - Source now imports package.json directly so it gets included in the binary.
+- 2c64428: Build now targets apple silicon when building binary. Support for other architectures might get added in the future.
+
 ## 0.0.2
 
 ### Patch Changes

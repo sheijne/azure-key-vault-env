@@ -1,7 +1,7 @@
 {
   "name": "azkvenv",
   "description": "Preload environment variables from Azure Key Vaults",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "license": {
     "type": "WTFPL",
